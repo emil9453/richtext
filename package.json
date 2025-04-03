@@ -1,0 +1,30 @@
+{
+	"name": "richtext",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev --turbopack",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@fvc/richtext": "1.0.13",
+		"next": "15.2.4",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"sass": "^1.86.1"
+	},
+	"devDependencies": {
+		"typescript": "^5",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"eslint": "^9",
+		"eslint-config-next": "15.2.4",
+		"@eslint/eslintrc": "^3"
+	},
+	"patchedDependencies": {
+		"@syncfusion/ej2-base@28.2.12": "patches/@syncfusion%2Fej2-base@28.2.12.patch"
+	}
+}
