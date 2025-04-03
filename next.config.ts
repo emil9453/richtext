@@ -34,7 +34,7 @@ const securityHeaders = [
 	{ key: 'Cross-Origin-Embedder-Policy', value: 'require-corp' },
 	{
 		key: 'Access-Control-Allow-Origin',
-		value: 'http://localhost:3000',
+		value: 'https://richtext-eta.vercel.app',
 	},
 ];
 
