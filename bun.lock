@@ -4,7 +4,7 @@
     "": {
       "name": "richtext",
       "dependencies": {
-        "@fvc/richtext": "1.0.13",
+        "@fvc/richtext": "1.0.16",
         "next": "15.2.4",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
@@ -20,9 +20,6 @@
         "typescript": "^5",
       },
     },
-  },
-  "patchedDependencies": {
-    "@syncfusion/ej2-base@28.2.12": "patches/@syncfusion%2Fej2-base@28.2.12.patch",
   },
   "packages": {
     "@ant-design/colors": ["@ant-design/colors@7.2.0", "", { "dependencies": { "@ant-design/fast-color": "^2.0.6" } }, "sha512-bjTObSnZ9C/O8MB/B4OUtd/q9COomuJAR2SYfhxLyHvCKn4EKwCN3e+fWGMo7H5InAyV0wL17jdE9ALrdOW/6A=="],
@@ -40,6 +37,8 @@
     "@ant-design/react-slick": ["@ant-design/react-slick@1.1.2", "", { "dependencies": { "@babel/runtime": "^7.10.4", "classnames": "^2.2.5", "json2mq": "^0.2.0", "resize-observer-polyfill": "^1.5.1", "throttle-debounce": "^5.0.0" }, "peerDependencies": { "react": ">=16.9.0" } }, "sha512-EzlvzE6xQUBrZuuhSAFTdsr4P2bBBHGZwKFemEfq8gIGyIQCxalYfZW/T2ORbtQx5rU69o+WycP3exY/7T1hGA=="],
 
     "@babel/runtime": ["@babel/runtime@7.27.0", "", { "dependencies": { "regenerator-runtime": "^0.14.0" } }, "sha512-VtPOkrdPHZsKc/clNqyi9WUA8TINkZ4cGk63UUE3u4pmB2k+ZMQRDuIOagv8UVd6j7k0T3+RRIb7beKTebNbcw=="],
+
+    "@cyber-wysiwyg/richtexteditor": ["@cyber-wysiwyg/richtexteditor@1.0.11", "", {}, "sha512-F3MpiVXTmTXyFguUyYKRMA/k2u8Eh+bSayR62ofr7yLprks42jUbKClx5F8DULoyDCWbqeIviRi1ICQ1H8mFFg=="],
 
     "@emnapi/core": ["@emnapi/core@1.4.0", "", { "dependencies": { "@emnapi/wasi-threads": "1.0.1", "tslib": "^2.4.0" } }, "sha512-H+N/FqT07NmLmt6OFFtDfwe8PNygprzBikrEMyQfgqSmT0vzE515Pz7R8izwB9q/zsH/MA64AKoul3sA6/CzVg=="],
 
@@ -69,7 +68,7 @@
 
     "@eslint/plugin-kit": ["@eslint/plugin-kit@0.2.8", "", { "dependencies": { "@eslint/core": "^0.13.0", "levn": "^0.4.1" } }, "sha512-ZAoA40rNMPwSm+AeHpCq8STiNAwzWLJuP8Xv4CHIc9wv/PSuExjMrmjfYNj682vW0OOiZ1HKxzvjQr9XZIisQA=="],
 
-    "@fvc/richtext": ["@fvc/richtext@1.0.13", "", { "dependencies": { "antd": "^5.0.0", "react": "^18.0.0" }, "peerDependencies": { "@syncfusion/ej2-base": "^28.2.3", "@syncfusion/ej2-buttons": "^28.2.3", "@syncfusion/ej2-icons": "^28.2.3", "@syncfusion/ej2-inputs": "^28.2.3", "@syncfusion/ej2-lists": "^28.2.3", "@syncfusion/ej2-navigations": "^28.2.3", "@syncfusion/ej2-popups": "^28.2.3", "@syncfusion/ej2-react-base": "^28.2.3", "@syncfusion/ej2-react-richtexteditor": "^28.2.3", "@syncfusion/ej2-richtexteditor": "^28.2.3", "@syncfusion/ej2-splitbuttons": "^28.2.3" } }, "sha512-yt9PUubrOHQiaJgeblSWPysKLn4tsQEOcEacfHICqjAGvGA1QHQ9hBux0KvDdFKxJieYQ3x4BqhfEomFFRtArw=="],
+    "@fvc/richtext": ["@fvc/richtext@1.0.16", "", { "dependencies": { "@cyber-wysiwyg/richtexteditor": "^1.0.10", "antd": "^5.0.0", "react": "^18.0.0" } }, "sha512-/hmK+7IUWoO/TmwYrTalk+FcIqZx0KjPZ0ILLfiVdBF8Ae0guL1aYgrVYxYAxWky+6UJgwKLjrdaY4KAxguMGQ=="],
 
     "@humanfs/core": ["@humanfs/core@0.19.1", "", {}, "sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA=="],
 
@@ -200,50 +199,6 @@
     "@swc/counter": ["@swc/counter@0.1.3", "", {}, "sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ=="],
 
     "@swc/helpers": ["@swc/helpers@0.5.15", "", { "dependencies": { "tslib": "^2.8.0" } }, "sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g=="],
-
-    "@syncfusion/ej2-base": ["@syncfusion/ej2-base@28.2.12", "", { "dependencies": { "@syncfusion/ej2-icons": "~28.2.3" }, "bin": { "syncfusion-license": "bin/syncfusion-license.js" } }, "sha512-7PYRBbWkfhnO1rV4jO+364URC28uX/53fPHOe1dIRmlEMZPb5vy3JIPjgcs4CoJei4QtKeOLzMhWtFS7skxscQ=="],
-
-    "@syncfusion/ej2-buttons": ["@syncfusion/ej2-buttons@28.2.7", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.5" } }, "sha512-pHWwqvxmc97tNXPaMJpu5iUyZr0RUiIPwbqX9J97lfrt4KqUm6Zzoj9hvMR+ai+gE7cV1KstWrwjUY1H3zYunw=="],
-
-    "@syncfusion/ej2-calendars": ["@syncfusion/ej2-calendars@28.2.11", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.9", "@syncfusion/ej2-buttons": "~28.2.7", "@syncfusion/ej2-inputs": "~28.2.11", "@syncfusion/ej2-lists": "~28.2.3", "@syncfusion/ej2-popups": "~28.2.9" } }, "sha512-gH1ZHXzWNk/rZNRzYSy/mGMoi7mzOcL9IfBTepFeVslAT4obVyLFFVH4YDy0QR70J3SBXKOjVYEFJ1cwwMlAXw=="],
-
-    "@syncfusion/ej2-compression": ["@syncfusion/ej2-compression@28.2.3", "", { "dependencies": { "@syncfusion/ej2-file-utils": "~28.2.3" } }, "sha512-OG+qWn2fNT4CtLpBWAif5gvZsrnpPrgEcxNQlT6uQX6ntDHT5IUDHSdvpUypGmJM3cDdcaqK8qygcgWBbj9ceQ=="],
-
-    "@syncfusion/ej2-data": ["@syncfusion/ej2-data@28.2.12", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.12" } }, "sha512-U4M45XfZGdlZXCb0tcsHXY3ihg5OjDJi+KG5TdNj62JknxWXV6UTx0WupztZnuGQ3DsSYyBt7X293de8cG6tcA=="],
-
-    "@syncfusion/ej2-dropdowns": ["@syncfusion/ej2-dropdowns@28.2.12", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.12", "@syncfusion/ej2-data": "~28.2.12", "@syncfusion/ej2-inputs": "~28.2.11", "@syncfusion/ej2-lists": "~28.2.3", "@syncfusion/ej2-navigations": "~28.2.12", "@syncfusion/ej2-notifications": "~28.2.3", "@syncfusion/ej2-popups": "~28.2.9" } }, "sha512-h1Grme7xelXBBHHDDG4zIKD2IGbcQyoJ0W7c6Wv2CFYr072YbaqU5iC65dNu7sSVLn+Qmapb8ioYFbnzkC+wfQ=="],
-
-    "@syncfusion/ej2-excel-export": ["@syncfusion/ej2-excel-export@28.2.3", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.3", "@syncfusion/ej2-compression": "~28.2.3" } }, "sha512-DgL6Jg7uKFJKB83EDU0WLMTYpJDCGXsgbJ59ODSHOW+go+3gCBK/A+NJ7eZdacVQ0kAUNhuXRaIyjTemDqK6WA=="],
-
-    "@syncfusion/ej2-file-utils": ["@syncfusion/ej2-file-utils@28.2.3", "", {}, "sha512-5PDcBtUfKy+P9BPVIYisT8DdZ7hNXkF5UWeOgw8rzE9BshBdpIcxRdEyMkRgQfqIHf3E7AWqLxyT87XxUOti2A=="],
-
-    "@syncfusion/ej2-filemanager": ["@syncfusion/ej2-filemanager@28.2.11", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.9", "@syncfusion/ej2-buttons": "~28.2.7", "@syncfusion/ej2-data": "~28.2.11", "@syncfusion/ej2-grids": "~28.2.11", "@syncfusion/ej2-inputs": "~28.2.11", "@syncfusion/ej2-layouts": "~28.2.5", "@syncfusion/ej2-lists": "~28.2.3", "@syncfusion/ej2-navigations": "~28.2.11", "@syncfusion/ej2-popups": "~28.2.9", "@syncfusion/ej2-splitbuttons": "~28.2.3" } }, "sha512-JbGS3cSpZpYyjgETRa39RjsdosqXTt24DnyyzUGr7L4sHsVj5FVLEFibSCwjrDuI0uzxsde85Z5AcqqcbNjMXg=="],
-
-    "@syncfusion/ej2-grids": ["@syncfusion/ej2-grids@28.2.12", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.12", "@syncfusion/ej2-buttons": "~28.2.7", "@syncfusion/ej2-calendars": "~28.2.11", "@syncfusion/ej2-compression": "~28.2.3", "@syncfusion/ej2-data": "~28.2.12", "@syncfusion/ej2-dropdowns": "~28.2.12", "@syncfusion/ej2-excel-export": "~28.2.3", "@syncfusion/ej2-file-utils": "~28.2.3", "@syncfusion/ej2-inputs": "~28.2.11", "@syncfusion/ej2-lists": "~28.2.3", "@syncfusion/ej2-navigations": "~28.2.12", "@syncfusion/ej2-notifications": "~28.2.3", "@syncfusion/ej2-pdf-export": "~28.2.3", "@syncfusion/ej2-popups": "~28.2.9", "@syncfusion/ej2-splitbuttons": "~28.2.3" } }, "sha512-idW0eT/wnRfsjsEpmbYiLuvCMRuUGggQvCdjILO0f9MultOHu04Triqckt6Amp1pXx4ONEhq38rDUJGU/viSCA=="],
-
-    "@syncfusion/ej2-icons": ["@syncfusion/ej2-icons@28.2.3", "", {}, "sha512-lwDMbygU3y15jLkTCtvFb7dwfEtOVknjajYWnp+wmCJF14ZUwDEBuY1jCcpDcEd6mHkDdS5GFlpifdjZhh9jJA=="],
-
-    "@syncfusion/ej2-inputs": ["@syncfusion/ej2-inputs@28.2.11", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.9", "@syncfusion/ej2-buttons": "~28.2.7", "@syncfusion/ej2-popups": "~28.2.9", "@syncfusion/ej2-splitbuttons": "~28.2.3" } }, "sha512-tyRwpY2w6ulO4IJjBydgWXLQ2QK5EeRBAZ4EIgnnmVX7/uKMQqSzZe6eiCuZrnGHTQzu4rHv1OXtA+wKDA6vmA=="],
-
-    "@syncfusion/ej2-layouts": ["@syncfusion/ej2-layouts@28.2.5", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.5" } }, "sha512-al+ap8vFqULPTcz8gAaf3wvtcQCPNmdXZk8eoh1k60EjtkBMvdlUhDTBnJLPXCmwOQKeg6oX0TrYIlEyM9VqUQ=="],
-
-    "@syncfusion/ej2-lists": ["@syncfusion/ej2-lists@28.2.3", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.3", "@syncfusion/ej2-buttons": "~28.2.3", "@syncfusion/ej2-data": "~28.2.3", "@syncfusion/ej2-popups": "~28.2.3" } }, "sha512-MB9ecuC0A3T6jwY6xIuHu5ZOtFcoNJGGCDWHiLRXH2OQWkeTsiGe0vjG2skTcrl0LXkinRAXo79RU1DaPFDB1Q=="],
-
-    "@syncfusion/ej2-navigations": ["@syncfusion/ej2-navigations@28.2.12", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.12", "@syncfusion/ej2-buttons": "~28.2.7", "@syncfusion/ej2-data": "~28.2.12", "@syncfusion/ej2-inputs": "~28.2.11", "@syncfusion/ej2-lists": "~28.2.3", "@syncfusion/ej2-popups": "~28.2.9" } }, "sha512-CxFO3dm2wmTLXa/b/dRjeiAx1ka30mhblLl8UFePqGo/0/a5u1obdiwTQOCAVhUI3sDDMk3gMcmd9mRz4FpaNA=="],
-
-    "@syncfusion/ej2-notifications": ["@syncfusion/ej2-notifications@28.2.3", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.3", "@syncfusion/ej2-buttons": "~28.2.3", "@syncfusion/ej2-popups": "~28.2.3" } }, "sha512-Nkw3XuH5qw0QKEq3m0hAraPIVRVEYUDJgjQGEJZrKCtQCST1t8EPUAD+DjT63HVpzwXK0LGAFWkZgXLevf75Bw=="],
-
-    "@syncfusion/ej2-pdf-export": ["@syncfusion/ej2-pdf-export@28.2.3", "", { "dependencies": { "@syncfusion/ej2-compression": "~28.2.3" } }, "sha512-bYvzVG4NZNhZv0juHJwJ56DfJ+Yc/mS3xJen2YJu6AcumTET1MMTG1IrlFvzLffwGvdDddXVZNgbNkVXJS3Fug=="],
-
-    "@syncfusion/ej2-popups": ["@syncfusion/ej2-popups@28.2.9", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.9", "@syncfusion/ej2-buttons": "~28.2.7" } }, "sha512-yhqUlhXOAL4WQHjqAFcqjnCxWsflya0uSfHqxkSXdyoaEvAlc0KsKop5nn7HyB1OqLQbSkBH7pn9yJd6QJYYkw=="],
-
-    "@syncfusion/ej2-react-base": ["@syncfusion/ej2-react-base@28.2.7", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.5" } }, "sha512-SWZ26XO6kF9p2MNpUnj6fUozy4p/XMnQOAdlxCnjxh3JuphCQ/Sd1sUOUHdANuLIy7e3lohOGzdfxq4yYnxgsg=="],
-
-    "@syncfusion/ej2-react-richtexteditor": ["@syncfusion/ej2-react-richtexteditor@28.2.11", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.9", "@syncfusion/ej2-react-base": "~28.2.7", "@syncfusion/ej2-richtexteditor": "28.2.11" } }, "sha512-KoJQFjKn9gcz26CulKQHj34vvn9aaMOLHrKJOPb1Qh/77ZjQHdqjxZ+mNJUsKdTXO+U5hSocG+W7ottNWBoCMA=="],
-
-    "@syncfusion/ej2-richtexteditor": ["@syncfusion/ej2-richtexteditor@28.2.11", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.9", "@syncfusion/ej2-buttons": "~28.2.7", "@syncfusion/ej2-dropdowns": "~28.2.11", "@syncfusion/ej2-filemanager": "~28.2.11", "@syncfusion/ej2-inputs": "~28.2.11", "@syncfusion/ej2-navigations": "~28.2.11", "@syncfusion/ej2-popups": "~28.2.9", "@syncfusion/ej2-splitbuttons": "~28.2.3" } }, "sha512-JQW5jrIZvKYH52sce+fwazdVbMDW67JeZyV2KmX2uCHYCo0K2Qq6MR6D7V7gaug81rR7XppLK+1UQ/X6Oo854w=="],
-
-    "@syncfusion/ej2-splitbuttons": ["@syncfusion/ej2-splitbuttons@28.2.3", "", { "dependencies": { "@syncfusion/ej2-base": "~28.2.3", "@syncfusion/ej2-popups": "~28.2.3" } }, "sha512-8PWYWo+kZgV2JfPkqe6riToKO7blxNBFMo083HdbaE2z76gKkB1Eg3JNCJU2NIqlsb8eZX1eBHd6JoUbTEkgow=="],
 
     "@tybys/wasm-util": ["@tybys/wasm-util@0.9.0", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw=="],
 
