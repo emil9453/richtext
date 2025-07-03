@@ -9,9 +9,9 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@fvc/richtext": "1.0.18",
 		"next": "15.2.4",
 		"react": "^19.0.0",
+		"@fvc/richtext": "1.0.19",
 		"react-dom": "^19.0.0",
 		"sass": "^1.86.1"
 	},
